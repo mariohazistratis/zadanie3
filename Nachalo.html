@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shadows of Enchantment</h1>
+            <nav>
+                <ul>
+                    <li><a href="Nachalo.html">Home</a></li>
+                    <li><a href="Main characters.html">Main Characters</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Story<span class="indicator"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="Introduction.html">Introduction</a></li>
+                            <li><a href="Main.html">Main part</a></li>
+                            <li><a href="Conclusion.html">Conclusion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Learn about the places the main characters are about to explore</h1>
+            <div class="row">
+                <section class="place-card">
+                    <img src="Enchanted forest.png" alt="Enchanted Forest">
+                    <div class="place-card-content">
+                        <h2>Enchanted Forest</h2>
+                        <p>The Enchanted Forest is a mystical realm teeming with ancient spirits and magic, where whispers of the past dance among the leaves. The canopy above sways gently in the breeze, casting dappled shadows upon the forest floor. The air is alive with murmurs of the ancient spirits, their voices whispering secrets long forgotten by mortals. Despite its serene appearance, the Enchanted Forest holds hidden dangers and challenges for those who venture within its depths. It serves as the starting point of Aria and Eldric's quest, a place of both wonder and peril where they must navigate through dense foliage and mystical creatures to reach their destination.</p>
+                    </div>
+                </section>
+                <section class="place-card">
+                    <img src="Lost citadel.png" alt="Lost Citadel">
+                    <div class="place-card-content">
+                        <h2>Lost Citadel</h2>
+                        <p>The Lost Citadel is a fortress shrouded in mystery and guarded by the echoes of ancient warriors. Its crumbling walls hold the secrets of ages past, with traps lying in wait to test the resolve of those who dare to enter. Within its confines, the minions of the malevolent sorceress Malora lurk in the shadows, ready to thwart any intruders who dare to challenge their mistress's dark machinations. As Aria and Eldric journey through the Lost Citadel, they face treacherous traps and fierce battles against Malora's minions, testing their skills and resolve as they press forward towards their ultimate goal.</p>
+                    </div>
+                </section>
+                <section class="place-card">
+                    <img src="Crystal caverns.png" alt="Crystal Caverns">
+                    <div class="place-card-content">
+                        <h2>Crystal Caverns</h2>
+                        <p>The Crystal Caverns are a network of underground tunnels where the very essence of magic flows like veins of light through the earth. The air grows colder with each step, and the walls seem to close in around Aria and Eldric like the jaws of a hungry beast. Within the depths of the caverns, they can feel the raw power of magic pulsing through the air, a palpable force that seems to reach out and ensnare them. It is here that they confront the true source of Malora's power, a malevolent force that threatens to consume everything in its path. The Crystal Caverns serve as the final battleground in Aria and Eldric's quest, where they must summon all of their courage and strength to defeat the darkness and save the realm from destruction.
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer" class="hidden">
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </footer>
+        <script>
+      window.addEventListener("scroll", function() {
+    var footer = document.getElementById("footer");
+    var scrollPosition = window.scrollY;
+    var documentHeight = document.documentElement.scrollHeight;
+    var windowHeight = window.innerHeight;
+
+    // Change visibility based on scroll position
+    if (scrollPosition + windowHeight >= documentHeight * 0.95) {
+        footer.classList.add("visible");
+        footer.classList.remove("hidden");
+    } else {
+        footer.classList.remove("visible");
+        footer.classList.add("hidden");
+    }
+});
+</script>
+</body>
+</html>
+

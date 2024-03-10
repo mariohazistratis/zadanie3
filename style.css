@@ -1,0 +1,294 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #071d3a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #071d3a, #0f3057);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Center the navigation menu */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; /* Add relative positioning */
+}
+
+/* Style for links */
+nav a {
+    color: #f9f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below the link */
+    left: 0;
+    background-color: #0e2d66;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #fbfbfb;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #ffcc00;
+}
+nav ul li:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.indicator {
+    margin-left: 5px;
+    color: #666;
+}
+
+
+/* Main Content Styles */
+main {
+    text-align: center;
+}
+
+.character-card,
+.place-card {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    background-color: #0f3057;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img,
+.place-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.character-info,
+.place-info {
+    margin-top: 20px;
+}
+
+/* Navigation Buttons Styles */
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #071d3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0f3057;
+}
+.next-prev{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.next-prev-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0d0d;
+    color: #cbcaca;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Place and Character Cards Styles */
+.place-cards,
+.character-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.place-card,
+.character-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #1d0e68;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(83, 82, 82, 0.1);
+}
+
+.place-card img,
+.character-card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.place-card-content,
+.character-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Story Page Styles */
+.story-content {
+    background: linear-gradient(to right, #1d0e68, #0f3057);
+    color: rgb(182, 179, 179);
+    padding: 20px;
+    margin-top: 20px;
+    writing-mode: horizontal-tb;
+}
+
+.story-content p {
+    margin-bottom: 20px;
+}
+
+/* Positioning for the next and previous buttons */
+.previous-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 300px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* CSS for the hidden class */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* CSS for the visible class */
+.visible {
+    opacity: 1;
+    visibility: visible;
+}

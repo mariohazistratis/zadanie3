@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shadows of Enchantment</h1>
+            <nav>
+                <ul>
+                    <li><a href="Nachalo.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="Main characters.html">Main Characters</a>
+                        <ul class="dropdown-content">
+                            <li><a href="Aria.html">Aria</a></li>
+                            <li><a href="Eldric.html">Eldric</a></li>
+                            <li><a href="Malora.html">Malora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Story</a></li>
+                    <ul class="dropdown-content">
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="Main.html">Main part</a></li>
+                        <li><a href="Conclusion.html">Conclusion</a></li>
+                    </ul>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <body>
+        <div>
+            <h1>Eldric - Character Description:</h1>
+            <p><strong>Personality:</strong> Eldric epitomizes wisdom and strength, his steadfast demeanor serving as a pillar of support for Aria throughout their quest. With a depth of knowledge borne from countless adventures, he guides Aria with unwavering confidence and a reassuring presence. Beneath his stoic exterior lies a heart filled with compassion and a fierce loyalty to Aria, driving him to protect and nurture her growth as they navigate the perils of their journey.</p>
+            <hr>
+            <h2>Detailed Character Description:</h2>
+            <p>Eldric is a seasoned adventurer and mentor to Aria, exuding an aura of wisdom and strength as they embark on their quest through the Enchanted Forest, the Lost Citadel, and the Crystal Caverns. With eyes reflecting a depth of knowledge, he stands as a steadfast companion amidst the serenity of the forest, providing stability and guidance for Aria as they face treacherous challenges. Eldric's character is marked by a deep sense of loyalty and compassion, as he supports Aria with unwavering confidence and serves as a mentor figure, nurturing her growth and helping her overcome her doubts to fulfill her destiny.</p>
+        </div>
+        <footer id="footer" class="hidden">
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </footer>
+        <script>
+      window.addEventListener("scroll", function() {
+    var footer = document.getElementById("footer");
+    var scrollPosition = window.scrollY;
+    var documentHeight = document.documentElement.scrollHeight;
+    var windowHeight = window.innerHeight;
+
+    // Change visibility based on scroll position
+    if (scrollPosition + windowHeight >= documentHeight * 0.95) {
+        footer.classList.add("visible");
+        footer.classList.remove("hidden");
+    } else {
+        footer.classList.remove("visible");
+        footer.classList.add("hidden");
+    }
+});
+</script>
+    </body>
+    </html>

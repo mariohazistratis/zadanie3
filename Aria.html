@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shadoes of Enchantment</h1>
+            <nav>
+                <ul>
+                    <li><a href="Nachalo.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="Main characters.html">Main Characters</a>
+                        <ul class="dropdown-content">
+                            <li><a href="Aria.html">Aria</a></li>
+                            <li><a href="Eldric.html">Eldric</a></li>
+                            <li><a href="Malora.html">Malora</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Story</a></li>
+                    <ul class="dropdown-content">
+                        <li><a href="Introduction.html">Introduction</a></li>
+                        <li><a href="Main.html">Main part</a></li>
+                        <li><a href="Conclusion.html">Conclusion</a></li>
+                    </ul>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+<body>
+    <div class="character-card">
+        <img src="Aria.png" alt="Aria">
+        <div class="card-content">
+        <h1>Aria - Appearance Description</h1>
+        <p>Aria is a young apprentice mage in the magical realm, endowed with innate talents yet burdened by self-doubt. With a satchel slung over her shoulder, she embarks on a perilous quest alongside her mentor, Eldric, through the Enchanted Forest, the Lost Citadel, and the Crystal Caverns. Throughout their journey, Aria's courage is tested as she faces treacherous obstacles and confronts the malevolent sorceress Malora. Despite her fears, Aria demonstrates resilience and determination, ultimately overcoming her doubts and embracing her true potential to save the realm from darkness.</p>  
+        <h2>Character Description:</h2>
+        <p><strong>Personality:</strong> Aria possesses a blend of determination and vulnerability, her courage tempered by lingering self-doubt. Despite her undeniable talent in magic, she carries the weight of uncertainty, grappling with fears of inadequacy that threaten to overshadow her potential. As the journey unfolds, Aria's resilience shines through as she confronts her doubts head-on, showcasing a fierce determination to overcome obstacles and fulfill her destiny.</p>
+    </div>
+    </div>
+    <footer id="footer" class="hidden">
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+    <script>
+  window.addEventListener("scroll", function() {
+var footer = document.getElementById("footer");
+var scrollPosition = window.scrollY;
+var documentHeight = document.documentElement.scrollHeight;
+var windowHeight = window.innerHeight;
+
+// Change visibility based on scroll position
+if (scrollPosition + windowHeight >= documentHeight * 0.95) {
+    footer.classList.add("visible");
+    footer.classList.remove("hidden");
+} else {
+    footer.classList.remove("visible");
+    footer.classList.add("hidden");
+}
+});
+</script>
+</body>
+</html>

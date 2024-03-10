@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <h1>Shadows of Enchantment</h1>
+            <nav>
+                <ul>
+                    <li><a href="Nachalo.html">Home</a></li>
+                    <li><a href="Main characters.html">Main Characters</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Story<span class="indicator"></span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="Introduction.html">Introduction</a></li>
+                            <li><a href="Main.html">Main part</a></li>
+                            <li><a href="Conclusion.html">Conclusion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+<main>
+    <section class="character-card">
+        <img src="Aria.png" alt="Aria">
+        <div class="character-card-content">
+            <h2>Aria</h2>
+            <p>Aria is a young apprentice mage with a gift for healing magic. She possesses an ethereal beauty, with long flowing hair the color of spun gold and eyes the shade of the deepest forest green. Her features are delicate but strong, reflecting both her inner strength and vulnerability. Despite her youthful appearance, Aria carries herself with a quiet confidence, tempered by a lingering sense of doubt that often plagues her mind. She wears simple robes adorned with intricate runes, a testament to her dedication to the arcane arts.</p>
+        </div>
+    </section>
+    <section class="character-card">
+        <img src="Eldric.png" alt="Eldric">
+        <div class="character-card-content">
+            <h2>Eldric</h2>
+            <p>Eldric is a seasoned adventurer and guardian of ancient relics. He exudes an air of rugged charm, with weather-beaten features and piercing blue eyes that betray a depth of wisdom earned through years of experience. His demeanor is stoic and reserved, masking a troubled past that weighs heavily upon his shoulders. Despite his gruff exterior, Eldric possesses a kind heart and a fierce loyalty to those he cares about.</p>
+        </div>
+    </section>
+    <section class="character-card">
+        <img src="Malora.png" alt="Malora">
+        <div class="character-card-content">
+            <h2>Malora</h2>
+            <p>Malora is a powerful sorceress with a dark agenda. She is a striking figure, with long flowing robes the color of midnight and eyes that gleam with an otherworldly light. Her beauty is both captivating and menacing, a reflection of the darkness that lurks within her soul. Malora commands an aura of power and authority, inspiring fear and awe in equal measure.</p>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="hidden">
+    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+</footer>
+<script>
+window.addEventListener("scroll", function() {
+var footer = document.getElementById("footer");
+var scrollPosition = window.scrollY;
+var documentHeight = document.documentElement.scrollHeight;
+var windowHeight = window.innerHeight;
+
+// Change visibility based on scroll position
+if (scrollPosition + windowHeight >= documentHeight * 0.95) {
+footer.classList.add("visible");
+footer.classList.remove("hidden");
+} else {
+footer.classList.remove("visible");
+footer.classList.add("hidden");
+}
+});
+</script>
+</div>
+</body>
+</html>
